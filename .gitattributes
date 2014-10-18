@@ -1,0 +1,13 @@
+* text eol=lf
+*.cpp  eol=lf
+*.hpp  eol=lf
+*.h  eol=lf
+*.c  eol=lf
+
+*.vcxproj* eol=crlf
+*.sln eol=crlf
+*.ttf binary
+*.lib binary
+*.dll binary
+*.so binary
+*.so.* binary

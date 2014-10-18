@@ -1,0 +1,16 @@
+build/
+*.opensdf
+*.suo
+*.sdf
+*.swp
+/bin
+/projects/vs2012/*.user
+*.psess
+projects/CodeBlocksLinux/fonts
+projects/CodeBlocksLinux/data
+projects/CodeBlocksLinux/*.txt
+*.vsp
+win32/
+x64/
+
+libnoise.vcxproj.user
