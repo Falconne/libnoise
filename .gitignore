@@ -14,3 +14,5 @@ win32/
 x64/
 
 libnoise.vcxproj.user
+
+*.ipch

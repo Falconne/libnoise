@@ -50,7 +50,7 @@ namespace noise
     /// - terrain height maps for local areas
     ///
     /// This plane extends infinitely in both directions.
-    class Plane
+    class __declspec(dllexport) Plane
     {
 
       public:
