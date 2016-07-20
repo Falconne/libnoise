@@ -18,6 +18,6 @@ projects/CodeBlocksLinux/*.txt
 *.db
 *.vspx
 *.vsps
-
+dist/
 */Release/*
 ipch
