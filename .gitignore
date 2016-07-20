@@ -9,10 +9,15 @@ build/
 projects/CodeBlocksLinux/fonts
 projects/CodeBlocksLinux/data
 projects/CodeBlocksLinux/*.txt
+
 *.vsp
-win32/
-x64/
+*.user
 
-libnoise.vcxproj.user
+*.opendb
+.vs/
+*.db
+*.vspx
+*.vsps
 
-*.ipch
+*/Release/*
+ipch
