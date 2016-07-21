@@ -19,5 +19,6 @@ projects/CodeBlocksLinux/*.txt
 *.vspx
 *.vsps
 dist/
-*/Release/*
 ipch
+win32/
+x64/
