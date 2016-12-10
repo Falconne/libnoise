@@ -130,11 +130,11 @@
       <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir dist\$(Platform)\$(Configuration)\lib
-mkdir dist\$(Platform)\$(Configuration)\bin
+      <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
+mkdir dist\$(PlatformTarget)\$(Configuration)\bin
 mkdir dist\include\noise
-copy /y $(Platform)\$(Configuration)\*.lib dist\$(Platform)\$(Configuration)\lib
-copy /y $(Platform)\$(Configuration)\*.dll dist\$(Platform)\$(Configuration)\bin
+copy /y $(Platform)\$(Configuration)\*.lib dist\$(PlatformTarget)\$(Configuration)\lib
+copy /y $(Platform)\$(Configuration)\*.dll dist\$(PlatformTarget)\$(Configuration)\bin
 xcopy /y/s src\*.h dist\include\noise</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -182,11 +182,11 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir dist\$(Platform)\$(Configuration)\lib
-mkdir dist\$(Platform)\$(Configuration)\bin
+      <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
+mkdir dist\$(PlatformTarget)\$(Configuration)\bin
 mkdir dist\include\noise
-copy /y $(Platform)\$(Configuration)\*.lib dist\$(Platform)\$(Configuration)\lib
-copy /y $(Platform)\$(Configuration)\*.dll dist\$(Platform)\$(Configuration)\bin
+copy /y $(Platform)\$(Configuration)\*.lib dist\$(PlatformTarget)\$(Configuration)\lib
+copy /y $(Platform)\$(Configuration)\*.dll dist\$(PlatformTarget)\$(Configuration)\bin
 xcopy /y/s src\*.h dist\include\noise</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -235,11 +235,11 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir dist\$(Platform)\$(Configuration)\lib
-mkdir dist\$(Platform)\$(Configuration)\bin
+      <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
+mkdir dist\$(PlatformTarget)\$(Configuration)\bin
 mkdir dist\include\noise
-copy /y $(Platform)\$(Configuration)\*.lib dist\$(Platform)\$(Configuration)\lib
-copy /y $(Platform)\$(Configuration)\*.dll dist\$(Platform)\$(Configuration)\bin
+copy /y $(Platform)\$(Configuration)\*.lib dist\$(PlatformTarget)\$(Configuration)\lib
+copy /y $(Platform)\$(Configuration)\*.dll dist\$(PlatformTarget)\$(Configuration)\bin
 xcopy /y/s src\*.h dist\include\noise</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -287,11 +287,11 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>mkdir dist\$(Platform)\$(Configuration)\lib
-mkdir dist\$(Platform)\$(Configuration)\bin
+      <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
+mkdir dist\$(PlatformTarget)\$(Configuration)\bin
 mkdir dist\include\noise
-copy /y $(Platform)\$(Configuration)\*.lib dist\$(Platform)\$(Configuration)\lib
-copy /y $(Platform)\$(Configuration)\*.dll dist\$(Platform)\$(Configuration)\bin
+copy /y $(Platform)\$(Configuration)\*.lib dist\$(PlatformTarget)\$(Configuration)\lib
+copy /y $(Platform)\$(Configuration)\*.dll dist\$(PlatformTarget)\$(Configuration)\bin
 xcopy /y/s src\*.h dist\include\noise</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
