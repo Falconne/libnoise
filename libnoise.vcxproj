@@ -127,7 +127,7 @@
       <ModuleDefinitionFile>.\src\win32\libnoise.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
-      <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
+      <Command>if exist dist\$(Platform)\$(Configuration) rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
@@ -179,7 +179,7 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       <ModuleDefinitionFile>.\src\win32\libnoise.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
-      <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
+      <Command>if exist dist\$(Platform)\$(Configuration) rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
@@ -232,7 +232,7 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       </ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
-      <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
+      <Command>if exist dist\$(Platform)\$(Configuration) rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
@@ -284,7 +284,7 @@ xcopy /y/s src\*.h dist\include\noise</Command>
       </ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
-      <Command>if exist dist rd /s/q dist\$(Platform)\$(Configuration)</Command>
+      <Command>if exist dist\$(Platform)\$(Configuration) rd /s/q dist\$(Platform)\$(Configuration)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>mkdir dist\$(PlatformTarget)\$(Configuration)\lib
