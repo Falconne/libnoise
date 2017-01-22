@@ -30,6 +30,8 @@
 #include "../exception.h"
 #include "../noisegen.h"
 
+#include "../defines.h"
+
 namespace noise
 {
 

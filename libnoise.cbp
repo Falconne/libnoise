@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libnoise" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/noise" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/noise" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="src/basictypes.h" />
+		<Unit filename="src/exception.h" />
+		<Unit filename="src/interp.h" />
+		<Unit filename="src/latlon.cpp" />
+		<Unit filename="src/latlon.h" />
+		<Unit filename="src/mathconsts.h" />
+		<Unit filename="src/misc.h" />
+		<Unit filename="src/model/cylinder.cpp" />
+		<Unit filename="src/model/cylinder.h" />
+		<Unit filename="src/model/line.cpp" />
+		<Unit filename="src/model/line.h" />
+		<Unit filename="src/model/model.h" />
+		<Unit filename="src/model/plane.cpp" />
+		<Unit filename="src/model/plane.h" />
+		<Unit filename="src/model/sphere.cpp" />
+		<Unit filename="src/model/sphere.h" />
+		<Unit filename="src/module/abs.cpp" />
+		<Unit filename="src/module/abs.h" />
+		<Unit filename="src/module/add.cpp" />
+		<Unit filename="src/module/add.h" />
+		<Unit filename="src/module/billow.cpp" />
+		<Unit filename="src/module/billow.h" />
+		<Unit filename="src/module/blend.cpp" />
+		<Unit filename="src/module/blend.h" />
+		<Unit filename="src/module/cache.cpp" />
+		<Unit filename="src/module/cache.h" />
+		<Unit filename="src/module/checkerboard.cpp" />
+		<Unit filename="src/module/checkerboard.h" />
+		<Unit filename="src/module/clamp.cpp" />
+		<Unit filename="src/module/clamp.h" />
+		<Unit filename="src/module/const.cpp" />
+		<Unit filename="src/module/const.h" />
+		<Unit filename="src/module/curve.cpp" />
+		<Unit filename="src/module/curve.h" />
+		<Unit filename="src/module/cylinders.cpp" />
+		<Unit filename="src/module/cylinders.h" />
+		<Unit filename="src/module/displace.cpp" />
+		<Unit filename="src/module/displace.h" />
+		<Unit filename="src/module/exponent.cpp" />
+		<Unit filename="src/module/exponent.h" />
+		<Unit filename="src/module/invert.cpp" />
+		<Unit filename="src/module/invert.h" />
+		<Unit filename="src/module/max.cpp" />
+		<Unit filename="src/module/max.h" />
+		<Unit filename="src/module/min.cpp" />
+		<Unit filename="src/module/min.h" />
+		<Unit filename="src/module/module.h" />
+		<Unit filename="src/module/modulebase.cpp" />
+		<Unit filename="src/module/modulebase.h" />
+		<Unit filename="src/module/multiply.cpp" />
+		<Unit filename="src/module/multiply.h" />
+		<Unit filename="src/module/perlin.cpp" />
+		<Unit filename="src/module/perlin.h" />
+		<Unit filename="src/module/power.cpp" />
+		<Unit filename="src/module/power.h" />
+		<Unit filename="src/module/ridgedmulti.cpp" />
+		<Unit filename="src/module/ridgedmulti.h" />
+		<Unit filename="src/module/rotatepoint.cpp" />
+		<Unit filename="src/module/rotatepoint.h" />
+		<Unit filename="src/module/scalebias.cpp" />
+		<Unit filename="src/module/scalebias.h" />
+		<Unit filename="src/module/scalepoint.cpp" />
+		<Unit filename="src/module/scalepoint.h" />
+		<Unit filename="src/module/select.cpp" />
+		<Unit filename="src/module/select.h" />
+		<Unit filename="src/module/spheres.cpp" />
+		<Unit filename="src/module/spheres.h" />
+		<Unit filename="src/module/terrace.cpp" />
+		<Unit filename="src/module/terrace.h" />
+		<Unit filename="src/module/translatepoint.cpp" />
+		<Unit filename="src/module/translatepoint.h" />
+		<Unit filename="src/module/turbulence.cpp" />
+		<Unit filename="src/module/turbulence.h" />
+		<Unit filename="src/module/voronoi.cpp" />
+		<Unit filename="src/module/voronoi.h" />
+		<Unit filename="src/noise.h" />
+		<Unit filename="src/noisegen.cpp" />
+		<Unit filename="src/noisegen.h" />
+		<Unit filename="src/vectortable.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
