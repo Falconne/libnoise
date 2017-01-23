@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/noise" prefix_auto="1" extension_auto="1" />
+				<Option output="dist/Debug/noise" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Debug/" />
 				<Option type="2" />
@@ -19,7 +19,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/noise" prefix_auto="1" extension_auto="1" />
+				<Option output="dist/Release/noise" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Release/" />
 				<Option type="2" />
@@ -36,6 +36,11 @@
 				</Linker>
 			</Target>
 		</Build>
+		<ExtraCommands>
+			<Add before="rm -rf dist" />
+			<Add after="mkdir -p dist/include/noise" />
+			<Add after="find src -iname &apos;*.h&apos; | xargs -iXX cp XX dist/include/noise" />
+		</ExtraCommands>
 		<Unit filename="src/basictypes.h" />
 		<Unit filename="src/exception.h" />
 		<Unit filename="src/interp.h" />
