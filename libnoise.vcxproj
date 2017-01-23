@@ -334,6 +334,7 @@ xcopy /y/s src\*.h dist\include\noise</Command>
     <ClCompile Include="src\noisegen.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\defines.h" />
     <ClInclude Include="src\module\abs.h" />
     <ClInclude Include="src\module\add.h" />
     <ClInclude Include="src\module\billow.h" />

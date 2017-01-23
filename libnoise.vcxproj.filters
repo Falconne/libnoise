@@ -232,6 +232,7 @@
     <ClInclude Include="src\noise.h" />
     <ClInclude Include="src\noisegen.h" />
     <ClInclude Include="src\vectortable.h" />
+    <ClInclude Include="src\defines.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\win32\noise.rc">
