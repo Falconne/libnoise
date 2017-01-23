@@ -14,6 +14,7 @@ build/
 *.vsps
 *.i
 *.depend
+*.layout
 obj/
 dist/
 ipch
