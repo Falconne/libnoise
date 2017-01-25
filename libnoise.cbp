@@ -38,8 +38,11 @@
 		</Build>
 		<ExtraCommands>
 			<Add before="rm -rf dist" />
-			<Add after="mkdir -p dist/include/noise" />
-			<Add after="find src -iname &apos;*.h&apos; | xargs -iXX cp XX dist/include/noise" />
+			<Add after="rm -rf inc_temp" />
+			<Add after="mkdir -p dist/include" />
+			<Add after="find src -name &apos;*.h&apos; | cpio -pdm inc_temp" />
+			<Add after="mv inc_temp/src dist/include/noise" />
+			<Add after="rm -rf inc_temp" />
 		</ExtraCommands>
 		<Unit filename="src/basictypes.h" />
 		<Unit filename="src/exception.h" />
