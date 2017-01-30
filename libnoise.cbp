@@ -14,7 +14,6 @@
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -29,13 +28,15 @@
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
 					<Add option="-std=c++11" />
-					<Add option="-Wall" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 				</Linker>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add option="-w" />
+		</Compiler>
 		<ExtraCommands>
 			<Add before="rm -rf dist" />
 			<Add after="rm -rf inc_temp" />
