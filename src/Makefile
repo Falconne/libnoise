@@ -4,25 +4,31 @@ include Sources
 # What source objects are we building?
 OBJECTS=$(SOURCES:.cpp=.o)
 
+DIST=../dist/Release
+OUTPUT=$(DIST)/libnoise.a
+
 .PHONY: all clean cleanobjs cleanlib libnoise
 
 # hooks for future makefiles being able to make multiple SOs, or older SOs
-libnoise: libnoise.a
+libnoise: $(OUTPUT)
+
+$(DIST):
+	mkdir -p $(DIST)
 
 # Real build targets
-libnoise.a: $(OBJECTS)
-	$(LIBTOOL) --mode=link $(CXX) $(LDFLAGS) -o $@ $(OBJECTS)
+$(OUTPUT): $(DIST) $(OBJECTS)
+	ar -r -s $@ $(OBJECTS)
 
 clean:	cleanobjs cleanlib
 cleanobjs:
 	-rm $(OBJECTS)
 	-rm -rf .libs model/.libs module/.libs
 cleanlib:
-	-rm libnoise.a
+	-rm $(OUTPUT)
 
 # C and C++
 %.o: %.cpp
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o obj/$@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
 %.o: %.c
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o obj/$@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
