@@ -20,3 +20,5 @@ dist/
 ipch
 win32/
 x64/
+*.o
+*.a
