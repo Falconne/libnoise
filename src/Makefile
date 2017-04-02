@@ -1,6 +1,8 @@
 # defines source files and vpaths
 include Sources
 
+CXX=g++-6
+
 # What source objects are we building?
 OBJECTS=$(SOURCES:.cpp=.o)
 
