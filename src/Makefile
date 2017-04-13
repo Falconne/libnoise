@@ -1,8 +1,6 @@
 # defines source files and vpaths
 include Sources
 
-CXX=g++-6
-
 CXXFLAGS=-D NDEBUG -fexpensive-optimizations -O3
 
 # What source objects are we building?
