@@ -1,7 +1,7 @@
 .PHONY: all src include clean
 all: src include
 
-clean: src cleanincludes
+clean: cleansrc cleanincludes
 
 cleansrc:
 	$(MAKE) -C src clean
