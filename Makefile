@@ -3,6 +3,9 @@ all: src include
 
 clean: src cleanincludes
 
+cleansrc:
+	$(MAKE) -C src clean
+
 src:
 	$(MAKE) -C $@
 
