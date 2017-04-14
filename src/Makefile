@@ -23,10 +23,10 @@ $(OUTPUT): $(DIST) $(OBJECTS)
 
 clean:	cleanobjs cleanlib
 cleanobjs:
-	-rm $(OBJECTS)
+	-rm -f $(OBJECTS)
 	-rm -rf .libs model/.libs module/.libs
 cleanlib:
-	-rm $(OUTPUT)
+	-rm -f $(OUTPUT)
 
 # C and C++
 %.o: %.cpp
