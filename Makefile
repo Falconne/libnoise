@@ -1,5 +1,7 @@
-.PHONY: all src include
+.PHONY: all src include clean
 all: src include
+
+clean: src cleanincludes
 
 src:
 	$(MAKE) -C $@
@@ -14,9 +16,11 @@ else
 						| sort -k 1nr | cut -f2-)
 endif
 
-include:
+cleanincludes:
 	rm -rf $(DIST_PATH)
 	rm -rf inc_temp
+
+include: cleanincludes
 	mkdir -p $(DIST_PATH)
 	find src -name '*.h' | cpio -pdm inc_temp
 	mv inc_temp/src $(DIST_PATH)/noise
