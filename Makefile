@@ -1,9 +1,9 @@
 .PHONY: all src include clean
 include: src
-	mkdir -p $(DIST_PATH)
-	find src -name '*.h' | cpio -pdm inc_temp
-	mv inc_temp/src $(DIST_PATH)/noise
-	rm -rf inc_temp
+	@mkdir -p $(DIST_PATH)
+	@find src -name '*.h' | cpio -pdm inc_temp
+	@mv inc_temp/src $(DIST_PATH)/noise
+	@rm -rf inc_temp
 
 clean: cleansrc cleanincludes
 

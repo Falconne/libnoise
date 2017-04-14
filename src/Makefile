@@ -19,14 +19,15 @@ $(DIST):
 
 # Real build targets
 $(OUTPUT): $(DIST) $(OBJECTS)
-	ar -r -s $@ $(OBJECTS)
+	@echo Creaing $@
+	@ar -r -s $@ $(OBJECTS)
 
 clean:	cleanobjs cleanlib
 cleanobjs:
-	-rm -f $(OBJECTS)
-	-rm -rf .libs model/.libs module/.libs
+	@rm -f $(OBJECTS)
+	@rm -rf .libs model/.libs module/.libs
 cleanlib:
-	-rm -f $(OUTPUT)
+	@rm -f $(OUTPUT)
 
 # C and C++
 %.o: %.cpp
