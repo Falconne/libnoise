@@ -24,5 +24,5 @@ else
 endif
 
 cleanincludes:
-	rm -rf $(DIST_PATH)
-	rm -rf inc_temp
+	@rm -rf $(DIST_PATH)
+	@rm -rf inc_temp
