@@ -1,12 +1,16 @@
 .PHONY: all src include clean
-all: src include
+include: src
+	mkdir -p $(DIST_PATH)
+	find src -name '*.h' | cpio -pdm inc_temp
+	mv inc_temp/src $(DIST_PATH)/noise
+	rm -rf inc_temp
 
 clean: cleansrc cleanincludes
 
 cleansrc:
 	$(MAKE) -C src clean
 
-src:
+src: cleanincludes
 	$(MAKE) -C $@
 
 SRC_PATH = src
@@ -21,10 +25,4 @@ endif
 
 cleanincludes:
 	rm -rf $(DIST_PATH)
-	rm -rf inc_temp
-
-include: cleanincludes
-	mkdir -p $(DIST_PATH)
-	find src -name '*.h' | cpio -pdm inc_temp
-	mv inc_temp/src $(DIST_PATH)/noise
 	rm -rf inc_temp

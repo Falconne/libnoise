@@ -9,7 +9,7 @@ OBJECTS=$(SOURCES:.cpp=.o)
 DIST=../dist/Release
 OUTPUT=$(DIST)/libnoise.a
 
-.PHONY: all clean cleanobjs cleanlib libnoise
+.PHONY: clean cleanobjs cleanlib libnoise
 
 # hooks for future makefiles being able to make multiple SOs, or older SOs
 libnoise: $(OUTPUT)
