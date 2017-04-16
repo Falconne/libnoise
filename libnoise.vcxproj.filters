@@ -235,11 +235,6 @@
     <ClInclude Include="src\defines.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="src\win32\noise.rc">
-      <Filter>win32</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="src\win32\libnoise.def">
       <Filter>win32</Filter>
     </CustomBuild>
